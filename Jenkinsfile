@@ -1,10 +1,11 @@
-pipeline{
-  agent any
-  stages{
-    stage("hello"){
-      steps{
-        sh "docker images"
-      }
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                sh 'docker images'
+            }
+        }
     }
-  }
 }
